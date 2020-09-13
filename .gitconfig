@@ -1,0 +1,6 @@
+[pager]
+	branch = false
+[core]
+	editor = nano
+[commit]
+	template = /Users/stevenbister/.gitmessage.txt
