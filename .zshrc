@@ -72,7 +72,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(wp-cli git brew composer npm)
+plugins=(wp-cli git brew composer npm zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -158,3 +158,7 @@ function ssl-check() {
         fi
     fi
 }
+
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
