@@ -1,6 +1,7 @@
-Subject line (try to keep under 50 characters)
+<type>[optional scope]: <description>
 
-Multi-line description of commit,
-feel free to be detailed.
+[optional body]
 
-[Ticket: X]
+[optional footer(s)]
+
+More info: https://www.conventionalcommits.org/en/v1.0.0/
