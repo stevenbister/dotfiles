@@ -4,3 +4,23 @@
 	editor = nano
 [commit]
 	template = /Users/stevenbister/.gitmessage.txt
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Steven Bister
+	email = stevebister@gmail.com
+# Comment: Start of "Extra Block"
+# Comment: This is to unlock VSCode as your git diff and git merge tool
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+# VSCode Difftool
+## End of extra block
